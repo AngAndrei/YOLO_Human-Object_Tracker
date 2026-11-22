@@ -1,0 +1,104 @@
+{
+  "checkpoints": {
+    "A": "30749c827cfa7a3e502d66ea7db72516bc5e1088819fecb0f10fa4ee5040523e",
+    "B": "b5cd481dc1c9ecb417604c6c06f0a8228b7e4ab307150f411796efa4d8fc73e3",
+    "baseline": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1"
+  },
+  "dataset_sha256": "7359ed6192778af8a8795236f9c12b17cf494e2ab21d4d5258b947bcdf2916d2",
+  "evaluation": {
+    "agnostic_nms": false,
+    "ap_iou_thresholds": [
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9,
+      0.95
+    ],
+    "ap_recall_points": 101,
+    "confidence_floor": 0.001,
+    "device": "cpu",
+    "imgsz": 320,
+    "max_det": 300,
+    "metric_iou": 0.5,
+    "nms_iou": 0.7,
+    "rect": true
+  },
+  "manifest_sha256": "51023b1bd700c3826a82f2a2e47047eb3c91effc7000313f125bcbd439d66e6e",
+  "scores": {
+    "A": {
+      "ap50": 0.8467009923184725,
+      "empty_false_positive_rate": 0.0,
+      "empty_false_positives": 0,
+      "empty_frames": 3,
+      "f1": 0.831858407079646,
+      "fn": 10,
+      "fp": 9,
+      "images": 60,
+      "labels": 57,
+      "map50_95": 0.546478089758293,
+      "precision": 0.8392857142857143,
+      "recall": 0.8245614035087719,
+      "tagged_examples": {},
+      "threshold": 0.47894495725631714,
+      "tp": 47
+    },
+    "B": {
+      "ap50": 0.9572639096649297,
+      "empty_false_positive_rate": 0.3333333333333333,
+      "empty_false_positives": 1,
+      "empty_frames": 3,
+      "f1": 0.9026548672566371,
+      "fn": 6,
+      "fp": 5,
+      "images": 60,
+      "labels": 57,
+      "map50_95": 0.5681118589501344,
+      "precision": 0.9107142857142857,
+      "recall": 0.8947368421052632,
+      "tagged_examples": {},
+      "threshold": 0.4895429313182831,
+      "tp": 51
+    },
+    "baseline": {
+      "ap50": 0.864920014987646,
+      "empty_false_positive_rate": 0.0,
+      "empty_false_positives": 0,
+      "empty_frames": 3,
+      "f1": 0.822429906542056,
+      "fn": 13,
+      "fp": 6,
+      "images": 60,
+      "labels": 57,
+      "map50_95": 0.7843640526880084,
+      "precision": 0.88,
+      "recall": 0.7719298245614035,
+      "tagged_examples": {},
+      "threshold": 0.3398939371109009,
+      "tp": 44
+    }
+  },
+  "split": "val",
+  "split_fingerprint": "d3a67533db3a33c713a884574eb395eda5121b2b9e556ac73913d9d3fac279f9",
+  "thresholds": {
+    "A": 0.47894495725631714,
+    "B": 0.4895429313182831,
+    "baseline": 0.3398939371109009
+  },
+  "validation_fingerprint": "d3a67533db3a33c713a884574eb395eda5121b2b9e556ac73913d9d3fac279f9",
+  "validation_selected_candidate": "B",
+  "versions": {
+    "cuda": null,
+    "device": "cpu",
+    "gpu": null,
+    "numpy": "2.5.5",
+    "opencv": "5.1.0",
+    "python": "3.13.5",
+    "torch": "2.15.0+cpu",
+    "ultralytics": "8.4.215"
+  }
+}
